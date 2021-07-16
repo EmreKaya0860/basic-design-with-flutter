@@ -83,9 +83,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(15),
+                      child: Container(
+                        width: width*0.23,
+                        height: height*0.06,
+                        color: Color(0xFFFFF8E2),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
                     Image(image: AssetImage("images/coin.png"),height: 30,),
                     Padding(padding: EdgeInsets.only(right: 10)),
                     Text("+50",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold,fontSize: 20),)
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 )
               ],),
